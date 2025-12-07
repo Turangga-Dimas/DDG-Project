@@ -1,0 +1,474 @@
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+ 
+
+body {
+  margin: 0; 
+  font-family: "Playfair Display", serif; 
+  background: #ffffff; 
+}
+
+
+nav {
+  width: 100%;
+  background: #4f5b66;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0 auto;    
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+nav ul li a:hover {
+      opacity: 0.7;
+    }
+
+.hero {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url(/asset/spiderman.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+
+.hero > div {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+      font-size: 100px;
+      margin-bottom: 10px;
+    }
+.hero p {
+      font-size: 40px;
+      position: relative;
+    }
+
+section {
+      padding: 80px 50px;
+    }
+
+.about {
+  scroll-margin-top: 70px;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+    }
+.about img {
+      width: 300px;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+.about-text {
+      max-width: 500px;
+    }
+.about-text h2 {
+      margin-bottom: 10px;
+      font-size: 80px;
+    }
+.about-text p {
+      font-size: 30px;
+    }
+
+.skills h2, .projects h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 80px;
+      height: 50vh;
+    }
+.skill-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+.skill-item {
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 200px;
+      height: 140px;
+      margin-top: -500px;
+    }
+
+project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 140px;
+    }
+.project-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+.project-item img {
+      width: 500px;
+      height: 500px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+.project-item h3 {
+  font-size: 50px;
+}
+.project-item p {
+      font-size: 40px;
+    }
+
+.contact-box {
+      max-width: 500px;
+      margin: auto;
+    }
+input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+button {
+      padding: 12px 20px;
+      border: none;
+      background: #000000;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+button:hover {
+      opacity: 0.8;
+    }
+    
+    .skill-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+    .skill-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 150px;
+    }
+    .skill-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+    .skill-item p {
+      margin: 0;
+      font-weight: bold;
+    }
+footer {
+    margin: top 20px;
+    font-size: 14px;
+    opacity:0.85;
+}
+.about {
+  background: #d6ea99;
+}
+
+.skills {
+  background: #e8f1ff;
+}
+
+.projects {
+  background: #fdf3e7;
+}
+
+.contact {
+  background: #e8ffe8;
+}
+
+}
+
+/* Tablet landscape */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  /* Style untuk tablet landscape */
+}
+
+
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  background: #ffffff;
+}
+
+
+nav {
+  width: 100%;
+  background: #4f5b66;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0 auto;    
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+nav ul li a:hover {
+      opacity: 0.7;
+    }
+
+.hero {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url(/asset/spiderman.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+
+.hero > div {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+      font-size: 100px;
+      margin-bottom: 10px;
+    }
+.hero p {
+      font-size: 40px;
+      position: relative;
+    }
+
+section {
+      padding: 80px 50px;
+    }
+
+.about {
+  scroll-margin-top: 70px;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      height: 50vh;
+    }
+.about img {
+      width: 300px;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+.about-text {
+      max-width: 500px;
+    }
+.about-text h2 {
+      margin-bottom: 10px;
+      font-size: 80px;
+    }
+.about-text p {
+      font-size: 30px;
+    }
+
+.skills h2, .projects h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 80px;
+      height: 50vh;
+    }
+.skill-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+.skill-item {
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 200px;
+      height: 140px;
+      margin-top: -500px;
+    }
+
+project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 140px;
+    }
+.project-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+.project-item img {
+      width: 500px;
+      height: 500px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+.project-item h3 {
+  font-size: 50px;
+}
+.project-item p {
+      font-size: 40px;
+    }
+
+.contact-box {
+      max-width: 500px;
+      margin: auto;
+    }
+input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+button {
+      padding: 12px 20px;
+      border: none;
+      background: #000000;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+button:hover {
+      opacity: 0.8;
+    }
+    
+    .skill-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+    .skill-item {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 150px;
+    }
+    .skill-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+    .skill-item p {
+      margin: 0;
+      font-weight: bold;
+    }
+footer {
+    margin: top 20px;
+    font-size: 14px;
+    opacity:0.85;
+}
+.about {
+  background: #d6ea99;
+}
+
+.skills {
+  background: #e8f1ff;
+}
+
+.projects {
+  background: #fdf3e7;
+}
+
+.contact {
+  background: #e8ffe8;
+}

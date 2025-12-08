@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1024px) {
  
 
 body {
@@ -19,7 +19,6 @@ nav {
   position: fixed;
   top: 0;
   z-index: 100;
-  position: relative;
 }
 
 nav ul {
@@ -29,7 +28,6 @@ nav ul {
   margin: 0 auto;    
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
 }
 
 nav ul li a {
@@ -255,7 +253,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 100;
-  position: relative;
+  position: fixed;
 }
 
 nav ul {
